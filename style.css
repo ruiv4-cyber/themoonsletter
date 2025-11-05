@@ -174,3 +174,38 @@ footer {
     font-size: 2em;
   }
 }
+/* --- Botões flutuantes --- */
+.social-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 1000;
+}
+
+.social-float a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  background: #5c3b92;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.social-float a:hover {
+  transform: scale(1.1);
+  background: #9b59b6;
+}
+
+/* Ícones específicos */
+.social-float .whatsapp { background: #25D366; }
+.social-float .tiktok { background: #000000; }
+.social-float .instagram { 
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+
