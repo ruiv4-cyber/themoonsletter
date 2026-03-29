@@ -16,6 +16,4 @@ for (let i = 0; i < numStars; i++) {
   star.style.height = `${size}px`;
   star.style.animationDuration = `${duration}s`;
 }
-const popup = document.getElementById("cookie-popup");
-const acceptBtn = document.getElementById("accept-cookies");
-const declineBtn = document.getElementById("decline-cookies");
+
