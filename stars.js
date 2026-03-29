@@ -16,3 +16,23 @@ for (let i = 0; i < numStars; i++) {
   star.style.height = `${size}px`;
   star.style.animationDuration = `${duration}s`;
 }
+const popup = document.getElementById("cookie-popup");
+const acceptBtn = document.getElementById("accept-cookies");
+const declineBtn = document.getElementById("decline-cookies");
+
+// Verifica se já respondeu
+if (localStorage.getItem("cookiesChoice")) {
+  popup.style.display = "none";
+}
+
+// Aceitar
+acceptBtn.addEventListener("click", () => {
+  localStorage.setItem("cookiesChoice", "accepted");
+  popup.style.display = "none";
+});
+
+// Recusar
+declineBtn.addEventListener("click", () => {
+  localStorage.setItem("cookiesChoice", "declined");
+  popup.style.display = "none";
+});
