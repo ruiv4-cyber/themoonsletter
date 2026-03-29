@@ -207,5 +207,82 @@ footer {
 .social-float .instagram { 
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
+/* === POPUP DE COOKIES === */
+.cookie-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
 
+.cookie-box {
+  background: rgba(120, 0, 200, 0.2);
+  border: 1px solid rgba(180, 100, 255, 0.5);
+  border-radius: 15px;
+  padding: 25px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 25px rgba(180, 80, 255, 0.6);
+  color: #f5e6ff;
+}
+
+.cookie-box h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #c77dff;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #a259ff;
+}
+
+.cookie-box p {
+  font-size: 0.95em;
+  color: #e0b3ff;
+  margin-bottom: 20px;
+}
+
+.cookie-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.cookie-buttons button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+
+#accept-cookies {
+  background: linear-gradient(135deg, #9b59b6, #6a0dad);
+  color: white;
+  box-shadow: 0 0 10px #a259ff;
+}
+
+#accept-cookies:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #c77dff;
+}
+
+
+#decline-cookies {
+  background: transparent;
+  color: #cdb4db;
+  border: 1px solid #cdb4db;
+}
+
+#decline-cookies:hover {
+  background: #cdb4db;
+  color: #120015;
+}
 
