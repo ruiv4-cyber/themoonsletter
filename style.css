@@ -207,3 +207,21 @@ footer {
 .social-float .instagram { 
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 }
+.about-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #a259ff, #6a00ff);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 0 15px rgba(162, 89, 255, 0.6);
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(162, 89, 255, 0.9);
+}
