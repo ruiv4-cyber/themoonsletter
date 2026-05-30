@@ -250,3 +250,67 @@ footer {
   line-height: 1.6;
   color: #f5e6ff;
 }
+
+
+
+
+
+
+
+
+.oracle-popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: popupFadeIn 1s ease;
+}
+
+.oracle-popup-content {
+  background: rgba(120, 0, 200, 0.25);
+  border: 1px solid rgba(180, 100, 255, 0.5);
+  border-radius: 20px;
+  padding: 35px;
+  max-width: 450px;
+  text-align: center;
+  color: #f5e6ff;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 30px rgba(162, 89, 255, 0.6);
+  transition: all 0.8s ease;
+}
+
+.oracle-popup-content h2 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #c77dff;
+  text-shadow: 0 0 12px #a259ff;
+  margin-bottom: 15px;
+}
+
+.oracle-popup-content p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.oracle-popup-content span {
+  color: #d9b3ff;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.oracle-popup.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease, visibility 1s ease;
+}
+
+@keyframes popupFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
