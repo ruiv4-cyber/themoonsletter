@@ -1,4 +1,4 @@
-/* === BASE GERAL === */
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -7,7 +7,6 @@ body {
   overflow-x: hidden;
 }
 
-/* === CABEÇALHO === */
 header {
   text-align: center;
   padding: 60px 20px 20px;
@@ -23,7 +22,6 @@ header p {
   color: #e0b3ff;
 }
 
-/* === CONTEÚDO PRINCIPAL === */
 .methods {
   text-align: center;
   padding: 30px 20px 60px;
@@ -35,7 +33,7 @@ header p {
   text-shadow: 0 0 8px #b983ff;
 }
 
-/* === CARDS === */
+
 .cards {
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +74,6 @@ header p {
   text-shadow: 0 0 8px #a259ff;
 }
 
-/* === RODAPÉ === */
 footer {
   text-align: center;
   padding: 20px;
@@ -86,7 +83,6 @@ footer {
   text-shadow: 0 0 6px #a259ff;
 }
 
-/* === FUNDO ESTRELADO (CSS) === */
 .stars {
   position: fixed;
   width: 100%;
@@ -101,7 +97,6 @@ footer {
   50% { opacity: 1; }
 }
 
-/* === ARANHA ANIMADA === */
 .spider {
   position: fixed;
   width: 60px;
@@ -118,7 +113,6 @@ footer {
   100% { top: -80px; }
 }
 
-/* === ESTRELAS MÓVEIS (JS) === */
 .star {
   position: fixed;
   background: white;
@@ -133,7 +127,6 @@ footer {
   100% { transform: translateY(0px) translateX(0px); }
 }
 
-/* === BOTÃO FLUTUANTE WHATSAPP === */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -161,7 +154,7 @@ footer {
   100% { box-shadow: 0 0 10px rgba(37, 211, 102, 0.6); }
 }
 
-/* === RESPONSIVIDADE === */
+
 @media (max-width: 768px) {
   .cards {
     flex-direction: column;
@@ -174,7 +167,7 @@ footer {
     font-size: 2em;
   }
 }
-/* --- Botões flutuantes --- */
+
 .social-float {
   position: fixed;
   bottom: 20px;
@@ -201,7 +194,6 @@ footer {
   background: #9b59b6;
 }
 
-/* Ícones específicos */
 .social-float .whatsapp { background: #25D366; }
 .social-float .tiktok { background: #000000; }
 .social-float .instagram { 
@@ -225,7 +217,7 @@ footer {
   transform: scale(1.08);
   box-shadow: 0 0 25px rgba(162, 89, 255, 0.9);
 }
-/* === SOBRE MIM === */
+
 .about-container {
   display: flex;
   justify-content: center;
